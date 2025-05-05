@@ -1,0 +1,48 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.7.34031.279
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{1BA9DB0A-8961-4AA1-BB81-F8C2820FCB52}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{DD16BAD6-01BF-4AFD-9B41-3A90CAD6A376}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Krosoft.Extensions.Mapping", "src\Krosoft.Extensions.Mapping\Krosoft.Extensions.Mapping.csproj", "{FABB30FC-05C3-4332-E6B9-42FE28B433BF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Krosoft.Extensions.Mapping.Tests", "tests\Krosoft.Extensions.Mapping.Tests\Krosoft.Extensions.Mapping.Tests.csproj", "{734E5BBA-6217-417B-93FB-C8E1B245B55B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "samples", "samples", "{02EA681E-C7D8-13C7-8484-4AC65E1B71E8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Krosoft.Extensions.Samples.Library", "samples\Krosoft.Extensions.Samples.Library\Krosoft.Extensions.Samples.Library.csproj", "{B83CD851-7EAB-8C00-DFE5-F66496C2CF4D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{FABB30FC-05C3-4332-E6B9-42FE28B433BF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FABB30FC-05C3-4332-E6B9-42FE28B433BF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FABB30FC-05C3-4332-E6B9-42FE28B433BF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FABB30FC-05C3-4332-E6B9-42FE28B433BF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{734E5BBA-6217-417B-93FB-C8E1B245B55B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{734E5BBA-6217-417B-93FB-C8E1B245B55B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{734E5BBA-6217-417B-93FB-C8E1B245B55B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{734E5BBA-6217-417B-93FB-C8E1B245B55B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B83CD851-7EAB-8C00-DFE5-F66496C2CF4D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B83CD851-7EAB-8C00-DFE5-F66496C2CF4D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B83CD851-7EAB-8C00-DFE5-F66496C2CF4D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B83CD851-7EAB-8C00-DFE5-F66496C2CF4D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{FABB30FC-05C3-4332-E6B9-42FE28B433BF} = {DD16BAD6-01BF-4AFD-9B41-3A90CAD6A376}
+		{734E5BBA-6217-417B-93FB-C8E1B245B55B} = {1BA9DB0A-8961-4AA1-BB81-F8C2820FCB52}
+		{B83CD851-7EAB-8C00-DFE5-F66496C2CF4D} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3ABC8EAA-58CC-445C-B724-7CB7158E0F62}
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,34 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>net9.0</TargetFramework>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Remove="Factories\**" />
+    <Compile Remove="Files\**" />
+    <Compile Remove="Mappings\**" />
+    <Compile Remove="Models\**" />
+    <Compile Remove="Validators\**" />
+    <EmbeddedResource Remove="Factories\**" />
+    <EmbeddedResource Remove="Files\**" />
+    <EmbeddedResource Remove="Mappings\**" />
+    <EmbeddedResource Remove="Models\**" />
+    <EmbeddedResource Remove="Validators\**" />
+    <None Remove="Factories\**" />
+    <None Remove="Files\**" />
+    <None Remove="Mappings\**" />
+    <None Remove="Models\**" />
+    <None Remove="Validators\**" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Mappings\CompteProfile.cs" />
+    <Compile Include="Models\Compte.cs" />
+    <Compile Include="Models\Dto\CompteDto.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Bogus" Version="35.6.3" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\Krosoft.Extensions.Mapping\Krosoft.Extensions.Mapping.csproj" />
+  </ItemGroup>
+</Project>
