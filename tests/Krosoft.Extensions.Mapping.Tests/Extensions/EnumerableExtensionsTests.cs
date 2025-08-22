@@ -46,7 +46,14 @@ public class EnumerableExtensionsTests : BaseTest
             new Compte { Name = "Test" }
         };
 
-        var dest = source.ToPagination<Compte, CompteDto>(new PaginationRequest(), _mapper);
+        var paginationResult = source.ToPagination<Compte, CompteDto>(new PaginationRequest(), _mapper);
+
+        Check.That(paginationResult.PageNumber).IsEqualTo(1);
+        Check.That(paginationResult.PageSize).IsEqualTo(10);
+        Check.That(paginationResult.TotalCount).IsEqualTo(2);
+        Check.That(paginationResult.TotalPages).IsEqualTo(1);
+        Check.That(paginationResult.Items).HasSize(2);
+        Check.That(paginationResult.Items.Select(x => x.Name)).ContainsExactly("Test_1", "Test");
     }
 
     [TestInitialize]
