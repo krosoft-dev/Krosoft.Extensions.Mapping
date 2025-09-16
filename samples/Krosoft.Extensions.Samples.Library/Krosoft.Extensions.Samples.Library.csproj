@@ -26,7 +26,7 @@
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Bogus" Version="35.6.3" />
-    <PackageReference Include="Newtonsoft.Json" Version="13.0.3" />
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.4" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\src\Krosoft.Extensions.Mapping\Krosoft.Extensions.Mapping.csproj" />
