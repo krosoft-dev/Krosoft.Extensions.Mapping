@@ -3,11 +3,6 @@
     <TargetFramework>net9.0</TargetFramework>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Mappings\CompteProfile.cs" />
-    <Compile Include="Models\Compte.cs" />
-    <Compile Include="Models\Dto\CompteDto.cs" />
-  </ItemGroup>
-  <ItemGroup>
     <PackageReference Include="Bogus" Version="35.6.3" />
   </ItemGroup>
   <ItemGroup>
