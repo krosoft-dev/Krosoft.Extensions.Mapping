@@ -3,7 +3,7 @@
     <TargetFramework>net9.0</TargetFramework>
   </PropertyGroup>
   <ItemGroup>
-    <PackageReference Include="Bogus" Version="35.6.3" />
+    <PackageReference Include="Bogus" Version="35.6.4" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\src\Krosoft.Extensions.Mapping\Krosoft.Extensions.Mapping.csproj" />
