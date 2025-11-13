@@ -19,6 +19,6 @@
 		<PackageReference Include="AutoMapper" Version="14.0.0" />
 	</ItemGroup>
 	<ItemGroup>
-		<PackageReference Include="Krosoft.Extensions.Core" Version="2025.9.18.3152" />
+		<PackageReference Include="Krosoft.Extensions.Core" Version="2025.11.13.4103" />
 	</ItemGroup>
 </Project>
