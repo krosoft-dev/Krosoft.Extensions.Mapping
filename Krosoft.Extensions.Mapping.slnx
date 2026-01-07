@@ -1,0 +1,11 @@
+<Solution>
+  <Folder Name="/samples/">
+    <Project Path="samples/Krosoft.Extensions.Samples.Library/Krosoft.Extensions.Samples.Library.csproj" />
+  </Folder>
+  <Folder Name="/src/">
+    <Project Path="src/Krosoft.Extensions.Mapping/Krosoft.Extensions.Mapping.csproj" />
+  </Folder>
+  <Folder Name="/tests/">
+    <Project Path="tests/Krosoft.Extensions.Mapping.Tests/Krosoft.Extensions.Mapping.Tests.csproj" />
+  </Folder>
+</Solution>
