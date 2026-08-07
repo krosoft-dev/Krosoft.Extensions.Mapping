@@ -15,7 +15,8 @@ trigger:
       - main
   paths:
     include:
-      - "**/Krosoft.Extensions.Mapping/*"
+      - src
+      - Directory.Build.props
 
 extends:
   template: tools/devops/templates/pipelines/nuget-template.yml@Krosoft.Extensions
