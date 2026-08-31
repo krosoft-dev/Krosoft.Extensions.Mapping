@@ -56,6 +56,33 @@ public class EnumerableExtensionsTests : BaseTest
         Check.That(paginationResult.Items.Select(x => x.Name)).ContainsExactly("Test_1", "Test");
     }
 
+    [TestMethod]
+    public void ToPagination_CustomSort_Ok()
+    {
+        var source = new List<Compte>
+        {
+            new Compte { Name = "Test_2" },
+            new Compte { Name = "Test_10" },
+            new Compte { Name = "Test_1" }
+        };
+
+        var paginationRequest = new PaginationRequest
+        {
+            SortBy = new HashSet<string> { $"{nameof(CompteDto.Name)}:asc" }
+        };
+
+        // Le sélecteur custom trie sur le suffixe numérique (2 < 10), là où le tri
+        // par réflexion aurait comparé les chaînes ("Test_10" < "Test_2").
+        var customSorts = new Dictionary<string, Func<CompteDto, object?>>
+        {
+            [nameof(CompteDto.Name)] = x => int.Parse(x.Name!.Replace("Test_", string.Empty))
+        };
+
+        var paginationResult = source.ToPagination<Compte, CompteDto>(paginationRequest, _mapper, customSorts);
+
+        Check.That(paginationResult.Items.Select(x => x.Name)).ContainsExactly("Test_1", "Test_2", "Test_10");
+    }
+
     [TestInitialize]
     public void SetUp()
     {

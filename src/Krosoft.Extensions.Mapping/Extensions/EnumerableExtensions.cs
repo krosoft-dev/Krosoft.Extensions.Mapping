@@ -15,13 +15,14 @@ public static class EnumerableExtensions
 
     public static PaginationResult<TDestination> ToPagination<TSource, TDestination>(this IEnumerable<TSource> items,
                                                                                      ISearchPaginationRequest paginationRequest,
-                                                                                     IMapper mapper)
+                                                                                     IMapper mapper,
+                                                                                     IDictionary<string, Func<TDestination, object?>>? customSorts = null)
     {
         var list = items.ToList();
 
         var pagined = list
                       .MapTo<TSource, TDestination>(mapper)
-                      .SortBy(paginationRequest)
+                      .SortBy(paginationRequest, customSorts)
                       .Skip((paginationRequest.PageNumber - 1) * paginationRequest.PageSize)
                       .Take(paginationRequest.PageSize);
 
